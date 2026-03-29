@@ -25,8 +25,7 @@ int main()
         else if(mp.size()==2)
         {
             for(auto it:mp)v.push_back(it.second);
-       abs(v[0]-v[1]) >= 2 ? cout<<"NO" : cout<<"YES";
-       cout<<endl;
+       abs(v[0]-v[1]) >= 2 ? cout<<"NO"<<endl : cout<<"YES"<<endl;
         }
 
     }
