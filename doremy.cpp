@@ -8,6 +8,7 @@ int main()
     {
         int n;cin>>n;
         map<int,int>mp;
+        vector<int>v;
         for(int i=0;i<n;i++)
         {int x;
             cin>>x;
@@ -23,12 +24,9 @@ int main()
         }
         else if(mp.size()==2)
         {
-            if(abs(mp[0]-mp[1])==1)
-            {
-                cout<<"Yes"<<endl;
-            }
-            else
-            cout<<"No"<<endl;
+            for(auto it:mp)v.push_back(it.second);
+       abs(v[0]-v[1]) >= 2 ? cout<<"NO" : cout<<"YES";
+       cout<<endl;
         }
 
     }
